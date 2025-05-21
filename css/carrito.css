@@ -1,4 +1,4 @@
-.body {
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -91,10 +91,14 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 14px;
+  color: #f3f0f0;
   border-top: 1px solid #e1e1e1;
   margin-top: auto;
-  background-color: #222;
-  color: white;
+}
+
+footer address {
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 footer address {
