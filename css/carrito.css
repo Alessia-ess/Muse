@@ -91,14 +91,10 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  color: #f3f0f0;
+  color: white;
   border-top: 1px solid #e1e1e1;
   margin-top: auto;
-}
-
-footer address {
-  font-style: italic;
-  margin-bottom: 5px;
+  background-color: #222;
 }
 
 footer address {
