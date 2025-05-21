@@ -1,95 +1,67 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #ffffff;
-  color: #000000;
-  line-height: 1.5;
-}
-
-nav {
-  padding: 15px 20px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.logo-container {
+.shipping-options {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  position: relative;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.logo-container img {
-  height: 40px;
+.shipping-options::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
 }
 
-.logo-container span {
-  font-size: 24px;
-  font-weight: bold;
+.shipping-options.right::after {
+  left: 50%;
+}
+
+.shipping-btn {
+  flex: 1;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.shipping-btn.active {
+  color: #000;
 }
 
 .cart-container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 0 20px;
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #000000;
-}
-
-h2 {
-  font-size: 18px;
-  margin: 20px 0 8px;
-  font-weight: normal;
-  color: #000000;
-}
-
-.shipping-option {
-  margin-bottom: 25px;
-  font-size: 16px;
-  color: #000000;
 }
 
 .empty-cart {
   text-align: center;
   margin: 30px 0;
   font-size: 16px;
-  color: #000000;
-  font-style: normal;
+  color: #666;
 }
 
 .checkout-btn {
   display: block;
   width: 100%;
-  padding: 14px;
-  background-color: #000000;
-  color: #ffffff;
+  padding: 16px;
+  background-color: #000;
+  color: #fff;
   border: none;
   border-radius: 0;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  margin: 30px 0;
+  margin-top: 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.divider {
-  height: 1px;
-  background-color: #eeeeee;
-  margin: 25px 0;
-}
-
-.main-content {
-  min-height: calc(100vh - 150px);
-  display: flex;
-  flex-direction: column;
 }
