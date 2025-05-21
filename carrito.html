@@ -57,8 +57,14 @@
     <div class="cart-container">
       <h1>Carrito</h1>
 
-      <h2>Envío estándar</h2>
-      <div class="shipping-option">Pick-up</div>
+      <div class="shipping-options" id="shippingOptions">
+        <button class="shipping-btn active" onclick="selectShipping(0)">
+          Envío estándar
+        </button>
+        <button class="shipping-btn" onclick="selectShipping(1)">
+          Pick-up
+        </button>
+      </div>
 
       <div class="empty-cart">Tu carrito está vacío.</div>
 
@@ -69,5 +75,6 @@
       <address>Selene Larcomar.0008784937</address>
       <small>© 2025 Muse Shop. Todos los derechos reservados.</small>
     </footer>
+    <script src="js/carrito.js"></script>
   </body>
 </html>
